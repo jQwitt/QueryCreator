@@ -1,0 +1,13 @@
+// style.scss - jwitt 11/23/19
+//      import map of scss partials 
+
+// General imports 
+@import "scss/_common.scss"; 
+@import "scss/_navBar.scss";
+@import "scss/_footer.scss";
+
+/* Main view components */ 
+@import "scss/_content.scss";
+@import "scss/_splash.scss";  
+@import "scss/_tools.scss";  
+@import "scss/_log.scss";

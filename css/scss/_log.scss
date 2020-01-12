@@ -1,0 +1,19 @@
+// _log.scss - jwitt 11/23/19
+//      styling for the error log component   
+
+.log {
+
+    & > * {
+        width: auto;
+        margin: 1%;      
+    }
+    #updates {
+        background-color: lighten($grey-3, 7%);
+        padding: 0.5rem 0.5rem 2.5rem 0.5rem;
+        height: 80%;
+        overflow-y: scroll;
+    }
+    #expt { 
+        padding: 0.125rem 1rem; 
+    }
+}

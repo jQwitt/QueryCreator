@@ -1,0 +1,27 @@
+// _common.scss - jwitt 11/23/19
+//      styling and grid controls for the toolbar component   
+
+.tools { 
+    min-width: 10rem;
+    max-width: 14rem; 
+    p {
+        margin: 0 !important; 
+    }
+    & > div > button, & > div > div {
+        margin: 0.25rem;
+    }
+    #queryInputs {
+        textarea {
+            margin-bottom: 0.25rem;
+        }
+        #run {
+            margin: 0.25rem 0.25rem 0 0;
+        }
+        #clear {
+            margin: 0.25rem 0 0 0;
+        }
+        #safe {
+            margin: 0.25rem 0 0 0.25rem;
+        } 
+    }
+}

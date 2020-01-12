@@ -1,0 +1,34 @@
+// _content.scss - jwitt 11/23/19
+//      sets up grid controls and scope level styling 
+//      for main content block (main, canvas, log, tools) 
+
+.content {
+    grid-template-rows: 27rem 15rem;
+    min-height: 90vh; 
+    margin-top: 5rem;
+    padding: 1rem;
+    background-color: $white;
+
+    #main, .tools { 
+        padding: 0.5rem;
+    }
+    .canvas { 
+        grid-column: span 4;
+        -ms-grid-column-span: 4;
+        grid-row: 1;
+    } 
+    #main, .log {
+        grid-column: span 3; 
+        -ms-grid-column-span: 3; 
+    }
+    .log {
+        grid-column: span 3;  
+        -ms-grid-column-span: 3;
+    }
+    .tools {
+        grid-column: 4;
+        grid-row: span 2; 
+        -ms-grid-row-span: 2; 
+        border-left: 0.125rem solid black;
+    }
+}

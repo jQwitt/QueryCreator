@@ -1,0 +1,11 @@
+.splash {
+    z-index: 999; 
+    position: fixed;
+    top: 0;
+    left: 0; 
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: aqua;
+ 
+    display: none !important;//rm for script
+}   

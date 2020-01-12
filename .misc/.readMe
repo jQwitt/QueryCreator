@@ -1,0 +1,26 @@
+SQL Query Creator 
+    Jack Witt 
+    Started:    11/10/19
+    Finsihed:   --/--/--
+
+Purpose: 
+    This is a simple php site to interface with my local backend database
+
+Environment:
+
+Limitations:
+    1.) Toggling a backend connection requires a large amount of resources
+        and is thus impractical, but I chose to implement this as a challenge
+        to myself. 
+            - storing all of my connection variables in the session, as well as
+            the connection itself is VERY impractical, as it uses far too many resources.  
+    2.) Ggogle is slated to update is cross-site cookie policy early next year so the 
+        font awesome cdn might possibly be impacted unless they update their services
+Expansion: 
+    1.) connection variables could be custom fields given by the user and passed
+        to the connect.php file
+            - these custom variables could potentially be stored in a cookie 
+
+Notes: 
+    1.) log export functionality based on approach by Carlos Delgado with ourcodeworld.com
+        (link: https://ourcodeworld.com/articles/read/189/how-to-create-a-file-and-generate-a-download-with-javascript-in-the-browser-without-a-server)
