@@ -68,7 +68,7 @@
                         <button id='clear' class='red row-2'>Clear</button>
                         <button id='safe' class='green row-2'>Safe ON</button>
                     </div>
-                    
+                      
                      
                 </div>
             </div>
