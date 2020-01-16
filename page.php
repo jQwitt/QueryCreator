@@ -69,7 +69,7 @@
                         <button id='safe' class='green row-2'>Safe ON</button>
                     </div>
                     
-                    
+                     
                 </div>
             </div>
         </div>

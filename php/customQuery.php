@@ -28,7 +28,7 @@
     $stmt->bind_param("s", $cleanQuery); 
 
         //error - calling on bool??
-
+  
     //$stmt->execute(); 
     //$results = $stmt->get_result(); 
     //$stmt->close(); 
