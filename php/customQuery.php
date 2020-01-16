@@ -21,13 +21,26 @@
     $cleanQuery = trim($conn->real_escape_string($rawQuery)); 
     $flag = substr($cleanQuery,0,6); 
     $safeMode = $_POST['safe']; 
-    $stmt = $conn->prepare('start tansaction;'.$cleanQuery.(($safeMode === 'true')? 'rollback;': 'commit;')); 
-    
-    // TO DO KAJDKJBWDA:WBD
-    //https://websitebeaver.com/prepared-statements-in-php-mysqli-to-prevent-sql-injection
-    
+    $toPrepare = 'start tansaction; ?'.(($safeMode === 'true')? 'rollback;': 'commit;'); 
+    echo $toPrepare; 
+    echo $cleanQuery;
+    $stmt = $conn->prepare($toPrepare); 
+    $stmt->bind_param("s", $cleanQuery); 
+
+        //error - calling on bool??
+
+    //$stmt->execute(); 
+    //$results = $stmt->get_result(); 
+    //$stmt->close(); 
+
     // handle different query cases 
     if (strcasecmp($flag,'select') === 0) {
+        //$toDisplay = []; 
+        /*
+        while ($row = $results->fetch_row()) {
+            $toDisplay[] = $row; 
+        }*/ 
+        //var_export($toDisplay); 
         //if (!$results) die('error: '.$conn->error); 
         //echo $results->num_rows." result(s):"; 
         /*
@@ -52,8 +65,6 @@
             } 
 
     */ 
-       
-        
     } else if (strcasecmp($flag,'insert') === 0) {
         echo '2';
     } else if (strcasecmp($flag,'delete') === 0) {
@@ -61,25 +72,7 @@
         echo '3';
     } else { 
        echo '4'; 
-    }     
-    // automatic at eof but clean up for learning purposes 
-    //$results->free();
-    $conn->close();
+    }   
 
-        /*
-        
-           
-        if (!$results) {
-            echo '<p class="red space-below">Query failed</p>'; 
-        }
-        if ($results->num_rows > 0) {
-            echo $results->num_rows." result(s):";  
-            //echo "<table class='space-below'><tr><th>ID</th><th>Name</th><th>Date</td></tr>"; 
-            echo "<table class='space-below'><tr><th>ID</th></tr>";
-            while($row = $results->fetch_row()) {
-                //echo "<tr><td>".$row[0]."</td><td>".$row[1]."</td><td>".$row[2]."</td><td>".$row[3]."</td></tr>";
-                echo "<tr><td>".$row[0]."</td></tr>"; 
-            } 
-            echo "</table>";  
-        */
+    $conn->close();
 ?>

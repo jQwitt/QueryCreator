@@ -109,9 +109,3 @@ $(document).ready(function() {
     // initial calls  
     updateLog('welcome to the SQL Query Creator!'); 
 });   
-
-//ADD HELPERS
-//  setinnertoEmpty() -> sets innerHTML to ""
-//  hide('id') -> toggles class 'hidden' for object passed in
-//  DOM CACHING
-//          $('#id')[0] can be getDOM('id') -> returns the dop object
