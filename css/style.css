@@ -83,13 +83,25 @@ input:hover, textarea:hover {
   grid-column-end: 5;
 }
 
-.cols-4 .right-middle {
-  -ms-grid-column: 3;
-      grid-column-start: 3;
+.cols-4 .span-left-end {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.cols-4 .span-right-all {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.cols-4 .span-left-all {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   grid-column-end: 4;
 }
 
-.cols-4 .right-end {
+.cols-4 .span-right-end {
   -ms-grid-column: 4;
       grid-column-start: 4;
   grid-column-end: 5;
@@ -351,6 +363,13 @@ input:hover, textarea:hover {
 
 .tools #queryInputs #safe {
   margin: 0.25rem 0 0 0.25rem;
+}
+
+.tools #bldrInputs {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 6;
+  background-color: aqua;
 }
 
 .log > * {

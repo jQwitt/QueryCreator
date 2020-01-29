@@ -58,11 +58,15 @@
                         <input class='span-full' type='text' name='db' placeholder='Database'>
                     </div>
                     <button id='conn' class='green row-2 span-full'>Set Connection</button>
+                    <button id='sel' class='blue row-3 span-left-end'>Select</button>
+                    <button id='ins' class='blue row-4 span-left-end'>Insert</button>
+                    <button id='upd' class='blue row-5 span-left-end'>Update</button>
+                    <form id='bldrInputs' class='span-right-all'>
+                        <!-- add custom inputs here -->
+                    </form>
 
-                    <!-- add custom controls here -->
-
-                    <button id='drop-queryInputs' class='blue row-3 span-full'>Use Custom SQL</button>
-                    <div id='queryInputs' class='container cols-4 row-4 span-full hidden'>
+                    <button id='drop-queryInputs' class='blue span-full'>Use Custom SQL</button>
+                    <div id='queryInputs' class='container cols-4 span-full hidden'>
                         <textarea name='custom-query' class='row-1 span-full' placeholder='Enter Query Here...' style='resize: none; height: 2rem;'></textarea>
                         <button id='run' class='green row-2 span-left'>Run</button>
                         <button id='clear' class='red row-2'>Clear</button>

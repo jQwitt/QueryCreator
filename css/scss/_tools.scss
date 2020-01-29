@@ -24,4 +24,9 @@
             margin: 0.25rem 0 0 0.25rem;
         } 
     }
+    #bldrInputs {
+        grid-row-start: 3;
+        grid-row-end: 6;
+        background-color: aqua;
+    }
 }

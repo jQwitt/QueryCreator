@@ -92,11 +92,19 @@ input:hover, textarea:hover {
         grid-column-start: 3;
         grid-column-end: 5;
     }
-    .right-middle {
-        grid-column-start: 3;
+    .span-left-end {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .span-right-all {
+        grid-column-start: 2;
+        grid-column-end: 5;
+    }
+    .span-left-all {
+        grid-column-start: 1;
         grid-column-end: 4;
     }
-    .right-end {
+    .span-right-end {
         grid-column-start: 4;
         grid-column-end: 5;
     }
